@@ -13,7 +13,7 @@
           var texto = mask.substring(i)
         if (texto.substring(0,1) != saida)
           {
-                        src.value += texto.substring(0,1);
+            src.value += texto.substring(0,1);
           }
         }
         
