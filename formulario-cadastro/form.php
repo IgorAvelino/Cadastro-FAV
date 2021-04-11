@@ -30,9 +30,13 @@
             <table>
                 <tr><td class="esquerda"><label for="nome">Nome Completo: </label></td><td><input type="text" name="nome" id="nome"></td></tr>
 
+                <tr><td class="esquerda"><label for="email">Email: </label></td><td><input type="email" name="email" id="email"></td></tr>
+
+                <tr><td class="esquerda"><label for="telefone">Telefone: </label></td><td><input type="text" name="telefone" id="telefone" onkeypress="formatar(this, '00)00000-0000')" maxlength="13" placeholder="(00)00000-0000"></td></tr>
+
                 <tr><td class="esquerda"><label for="data_nasci">Data de Nascimento: </label></td><td><input type="date" name="data_nasci" id="data_nasci"></td></tr>
 
-                <tr><td class="esquerda"><label for="idade">Idade: </label></td><td><input type="number" name="idade" id="idade" min="18" max="99"></td></tr>
+                <tr><td class="esquerda"><label for="idade">Idade: </label></td><td><input type="number" name="idade" id="idade" min="0" max="99"></td></tr>
 
                 <tr><td class="esquerda"><label for="local_nasci">Local de Nascimento: </label></td><td><input type="text" name="local_nasci" id="local_nasci"></td></tr>
 
