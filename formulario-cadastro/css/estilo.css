@@ -36,3 +36,7 @@ table{
 table label{
     text-transform: capitalize;
 }
+
+.btn_enviar{
+    padding: 5px 20px;
+}
