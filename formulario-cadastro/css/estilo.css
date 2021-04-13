@@ -26,6 +26,10 @@ form{
     padding: 20px;
 }
 
+input, textarea{
+    outline: none;
+}
+
 table{
     border-spacing: 10px;
 }
