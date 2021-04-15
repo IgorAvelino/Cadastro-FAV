@@ -28,7 +28,7 @@
 
         <h2>Dados do Acolhido</h2>
 
-        <form action="cadastro.php" method="get">
+        <form action="cadastro.php" method="post">
             <table>
                 <tr><td class="esquerda"><label for="nome">Nome Completo: </label></td><td><input type="text" name="nome" id="nome"></td></tr>
 
@@ -71,15 +71,15 @@
                 <tr><td class="esquerda"><label for="nome_mae">nome da mãe: </label></td><td><input type="text" name="nome_mae" id="nome_mae"></td></tr>
 
                 <tr><td class="esquerda"><label for="estado_civil">Estado Civil: </label></td><td><select>
-                    <option value="casado">Casado</option>
                     <option value="solteiro">Solteiro</option>
-                    <option value="viuvo">Viúvo</option>
+                    <option value="casado">Casado</option>
                     <option value="relacao_est">Divorciado</option>
+                    <option value="viuvo">Viúvo</option>
                 </select></td>
                 
                 <td class="esquerda"><label for="estado_civil">Filhos: </label></td><td><select>
-                    <option value="sim">Sim</option>
                     <option value="nao">Não</option>
+                    <option value="sim">Sim</option>
                 </select></td></tr>
 
                 <tr><td class="esquerda"><label for="observacoes">Observações: </label></td><td><textarea type="text" name="observacoes" id="observacoes" rows="5" cols="22"></textarea></td></tr>
