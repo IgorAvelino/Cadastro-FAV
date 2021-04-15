@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset= "UTF-8">
+    <link rel= stylesheet href="css/estilo.css">
+    <title>Contate-nos</title>
+    <script>
+        function formatar(src, mask)
+        {
+          var i = src.value.length;
+          var saida = mask.substring(0,1);
+          var texto = mask.substring(i)
+        if (texto.substring(0,1) != saida)
+          {
+            src.value += texto.substring(0,1);
+          }
+        }
+        
+    </script>
+</head>
+<body>
+<div class="interface">
+
+    <div class="contato_mensagem">
+        <form action="contato_mensagem.php" method="post">
+            <table>
+                <tr><td><label for="nome">Nome: </label></td><td><input type="text" name="nome" id="nome"></td></tr>
+
+                <tr><td><label for="email">Email: </label></td><td><input type="email" name="email" id="email"></td></tr>
+
+                <tr><td><label for="telefone">Telefone: </label></td><td><input type="text" name="telefone" id="telefone" onkeypress="formatar(this, '00)00000-0000')" maxlength="13" placeholder="(00)00000-0000"></td></tr>
+
+                <tr><td><label for="mensagem">Mensagem: </label></td><td><textarea name="mensagem" id="mensagem" cols="22" rows="5"></textarea></td></tr>
+            </table>
+        </form>
+    </div>
+
+</div>
+</body>
+</html>
