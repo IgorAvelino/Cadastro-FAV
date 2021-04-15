@@ -21,6 +21,10 @@ h1{
     text-align: center;
     margin-top: 5px;
 }
+h2{
+    margin: 10px;
+    padding-left: 30px;
+}
 
 form{
     padding: 20px;
@@ -39,6 +43,9 @@ table{
 }
 table label{
     text-transform: capitalize;
+}
+table input[type="checkbox"]{
+    margin-right: 5px;
 }
 
 .btn_enviar{

@@ -26,7 +26,9 @@
 
         <h1>Formulário de Cadastro</h1>
 
-        <form action="cadastro.php" method="post">
+        <h2>Dados do Acolhido</h2>
+
+        <form action="cadastro.php" method="get">
             <table>
                 <tr><td class="esquerda"><label for="nome">Nome Completo: </label></td><td><input type="text" name="nome" id="nome"></td></tr>
 
@@ -82,9 +84,39 @@
 
                 <tr><td class="esquerda"><label for="observacoes">Observações: </label></td><td><textarea type="text" name="observacoes" id="observacoes" rows="5" cols="22"></textarea></td></tr>
 
-                <tr><td></td><td><input class="btn_enviar" type="submit" value="Enviar"></td></tr>
+                </table>
 
-            </table>
+                <h2>Substância psicoativa (SPA) Utilizada</h2>
+
+                <table>
+                    <tr><td><input type="checkbox" name="subs" id="alcool" value="alcool"><label for="alcool">Álcool</label></td><td><label for="data_inicio">Data de início do uso: </label><input type="date" name="data_inicio" id="data_inicio"></td><td><label for="data_ultimo">Data do último uso: </label><input type="date" name="data_ultimo" id="data_ultimo"></td></tr>
+
+                    <tr><td><input type="checkbox" name="subs" id="anfetaminas" value="anfetaminas"><label for="anfetaminas">anfetaminas</label></td><td><label for="data_inicio">Data de início do uso: </label><input type="date" name="data_inicio" id="data_inicio"></td><td><label for="data_ultimo">Data do último uso: </label><input type="date" name="data_ultimo" id="data_ultimo"></td></tr>
+
+                    <tr><td><input type="checkbox" name="subs" id="benzodiazepinico" value="benzodiazepinico"><label for="benzodiazepinico">benzodiazepínico</label></td><td><label for="data_inicio">Data de início do uso: </label><input type="date" name="data_inicio" id="data_inicio"></td><td><label for="data_ultimo">Data do último uso: </label><input type="date" name="data_ultimo" id="data_ultimo"></td></tr>
+
+                    <tr><td><input type="checkbox" name="subs" id="cigarro_tabaco" value="cigarro_tabaco"><label for="cigarro_tabaco">cigarro de tabaco</label></td><td><label for="data_inicio">Data de início do uso: </label><input type="date" name="data_inicio" id="data_inicio"></td><td><label for="data_ultimo">Data do último uso: </label><input type="date" name="data_ultimo" id="data_ultimo"></td></tr>
+
+                    <tr><td><input type="checkbox" name="subs" id="cocaina" value="cocaina"><label for="cocaina">cocaína</label></td><td><label for="data_inicio">Data de início do uso: </label><input type="date" name="data_inicio" id="data_inicio"></td><td><label for="data_ultimo">Data do último uso: </label><input type="date" name="data_ultimo" id="data_ultimo"></td></tr>
+
+                    <tr><td><input type="checkbox" name="subs" id="crack" value="crack"><label for="crack">crack</label></td><td><label for="data_inicio">Data de início do uso: </label><input type="date" name="data_inicio" id="data_inicio"></td><td><label for="data_ultimo">Data do último uso: </label><input type="date" name="data_ultimo" id="data_ultimo"></td></tr>
+
+                    <tr><td><input type="checkbox" name="subs" id="ecstasy" value="ecstasy"><label for="ecstasy">ecstasy</label></td><td><label for="data_inicio">Data de início do uso: </label><input type="date" name="data_inicio" id="data_inicio"></td><td><label for="data_ultimo">Data do último uso: </label><input type="date" name="data_ultimo" id="data_ultimo"></td></tr>
+
+                    <tr><td><input type="checkbox" name="subs" id="heroina" value="heroina"><label for="heroina">heroína</label></td><td><label for="data_inicio">Data de início do uso: </label><input type="date" name="data_inicio" id="data_inicio"></td><td><label for="data_ultimo">Data do último uso: </label><input type="date" name="data_ultimo" id="data_ultimo"></td></tr>
+
+                    <tr><td><input type="checkbox" name="subs" id="inalantes" value="inalantes"><label for="inalantes">inalantes</label></td><td><label for="data_inicio">Data de início do uso: </label><input type="date" name="data_inicio" id="data_inicio"></td><td><label for="data_ultimo">Data do último uso: </label><input type="date" name="data_ultimo" id="data_ultimo"></td></tr>
+
+                    <tr><td><input type="checkbox" name="subs" id="lsd" value="lsd"><label for="lsd">LSD</label></td><td><label for="data_inicio">Data de início do uso: </label><input type="date" name="data_inicio" id="data_inicio"></td><td><label for="data_ultimo">Data do último uso: </label><input type="date" name="data_ultimo" id="data_ultimo"></td></tr>
+
+                    <tr><td><input type="checkbox" name="subs" id="maconha" value="maconha"><label for="maconha">maconha</label></td><td><label for="data_inicio">Data de início do uso: </label><input type="date" name="data_inicio" id="data_inicio"></td><td><label for="data_ultimo">Data do último uso: </label><input type="date" name="data_ultimo" id="data_ultimo"></td></tr>
+
+                    <tr><td><label for="outros">outros: </label><input type="text" name="subs" id="outros"></td><td><label for="data_inicio">Data de início do uso: </label><input type="date" name="data_inicio" id="data_inicio"></td><td><label for="data_ultimo">Data do último uso: </label><input type="date" name="data_ultimo" id="data_ultimo"></td></tr>
+
+
+                    <tr><td></td><td><input class="btn_enviar" type="submit" value="Enviar"></td></tr>
+
+                 </table>
     
         </form>
     </div>
