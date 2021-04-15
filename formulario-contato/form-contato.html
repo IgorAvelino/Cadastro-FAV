@@ -24,13 +24,15 @@
     <div class="contato_mensagem">
         <form action="contato_mensagem.php" method="post">
             <table>
-                <tr><td><label for="nome">Nome: </label></td><td><input type="text" name="nome" id="nome"></td></tr>
+                <tr><td><label for="nome">Nome Completo*: </label></td><td><input type="text" name="nome" id="nome" required></td></tr>
 
-                <tr><td><label for="email">Email: </label></td><td><input type="email" name="email" id="email"></td></tr>
+                <tr><td><label for="email">Email*: </label></td><td><input type="email" name="email" id="email" required></td></tr>
 
-                <tr><td><label for="telefone">Telefone: </label></td><td><input type="text" name="telefone" id="telefone" onkeypress="formatar(this, '00)00000-0000')" maxlength="13" placeholder="(00)00000-0000"></td></tr>
+                <tr><td><label for="telefone">Telefone*: </label></td><td><input type="text" name="telefone" id="telefone" onkeypress="formatar(this, '00)00000-0000')" maxlength="13" placeholder="(00)00000-0000" required></td></tr>
 
-                <tr><td><label for="mensagem">Mensagem: </label></td><td><textarea name="mensagem" id="mensagem" cols="22" rows="5"></textarea></td></tr>
+                <tr><td><label for="mensagem">Mensagem*: </label></td><td><textarea name="mensagem" id="mensagem" cols="22" rows="5" required></textarea></td></tr>
+
+                <tr><td><input type="submit" value="Enviar Mensagem"></td></tr>
             </table>
         </form>
     </div>
